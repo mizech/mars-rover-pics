@@ -1,8 +1,7 @@
-//
-//  Photo.swift
-//  MarsRoverPics
-//
-//  Created by Michael on 22.06.24.
-//
-
 import Foundation
+
+struct Photo: Identifiable, Codable {
+    var id: Int
+    var img_src: String
+    var earth_date: String
+}
