@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var contentVM = ContentViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -10,20 +12,8 @@ struct ContentView: View {
         }
         .padding()
         .task {
-            if let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String {
-                let sURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=\(apiKey)"
-                let oURL = URL(string: sURL)
-                
-                if let url = oURL {
-                    do {
-                        let (data, _) = try await URLSession.shared.data(from: url)
-                        let response = try JSONDecoder().decode(Photos.self, from: data)
-                        print(response.photos)
-                    } catch {
-                        print(error)
-                    }
-                }
-            }
+            await contentVM.loadPhotos()
+            print(contentVM.photos)
         }
     }
 }
