@@ -1,17 +1,12 @@
-//
-//  MarsRoverPicsApp.swift
-//  MarsRoverPics
-//
-//  Created by Michael on 22.06.24.
-//
-
 import SwiftUI
 
 @main
 struct MarsRoverPicsApp: App {
+    @State var contentVM = ContentViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(contentVM)
         }
     }
 }

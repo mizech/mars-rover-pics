@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var contentVM = ContentViewModel()
+    @Environment(ContentViewModel.self) var contentVM
     
     var body: some View {
         VStack {
