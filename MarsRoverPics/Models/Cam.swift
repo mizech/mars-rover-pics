@@ -1,8 +1,8 @@
-//
-//  Cam.swift
-//  MarsRoverPics
-//
-//  Created by Michael on 28.06.24.
-//
-
 import Foundation
+
+enum Cam: String, CaseIterable {
+    case front = "Front-Camera"
+    case rear = "Rear-Camera"
+    case mast = "Mast-Camera"
+    case nav = "Navigation-Camera"
+}

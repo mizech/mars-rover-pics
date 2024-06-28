@@ -4,10 +4,22 @@ import Foundation
 class ContentViewModel {
     var photos = [Photo]()
     
-    func loadPhotos() async {
+    func loadPhotos(selectedCam: Cam) async {
         if let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String {
-            let sURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=\(apiKey)"
-            let oURL = URL(string: sURL)
+            var cam = ""
+            
+            switch selectedCam {
+            case .front:
+                cam = "fhaz"
+            case .rear:
+                cam = "rhaz"
+            case .mast:
+                cam = "mast"
+            case .nav:
+                cam = "navcam"
+            }
+            
+            let oURL = URL(string: "\(Consts.baseURL)?sol=1000&camera=\(cam)&api_key=\(apiKey)")
             
             if let url = oURL {
                 do {

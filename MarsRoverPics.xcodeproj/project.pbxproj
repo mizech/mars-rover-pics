@@ -16,6 +16,8 @@
 		4C01BEF52C26BDBA006B431B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01BEF42C26BDBA006B431B /* Photo.swift */; };
 		4C01BEF72C26BE02006B431B /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01BEF62C26BE02006B431B /* Photos.swift */; };
 		4C781FB02C29B5F90097D505 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C781FAF2C29B5F90097D505 /* ContentViewModel.swift */; };
+		4CA61DA02C2EFCDA00F61813 /* Cam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA61D9F2C2EFCDA00F61813 /* Cam.swift */; };
+		4CA61DA22C2F01EC00F61813 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA61DA12C2F01EC00F61813 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4C01BEF42C26BDBA006B431B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4C01BEF62C26BE02006B431B /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		4C781FAF2C29B5F90097D505 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4CA61D9F2C2EFCDA00F61813 /* Cam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cam.swift; sourceTree = "<group>"; };
+		4CA61DA12C2F01EC00F61813 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,10 @@
 		4C01BEDD2C26B081006B431B /* MarsRoverPics */ = {
 			isa = PBXGroup;
 			children = (
+				4CA61D9E2C2EFCBA00F61813 /* Views */,
 				4C781FAE2C29B5D00097D505 /* ViewModels */,
 				4C01BEF32C26BD74006B431B /* Models */,
 				4C01BEF22C26B738006B431B /* Info.plist */,
-				4C01BEDE2C26B081006B431B /* MarsRoverPicsApp.swift */,
-				4C01BEE02C26B081006B431B /* ContentView.swift */,
 				4C01BEE22C26B082006B431B /* Assets.xcassets */,
 				4C01BEE42C26B082006B431B /* Preview Content */,
 				4C01BEEC2C26B20D006B431B /* README.md */,
@@ -88,6 +91,8 @@
 			children = (
 				4C01BEF42C26BDBA006B431B /* Photo.swift */,
 				4C01BEF62C26BE02006B431B /* Photos.swift */,
+				4CA61D9F2C2EFCDA00F61813 /* Cam.swift */,
+				4CA61DA12C2F01EC00F61813 /* Consts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +103,15 @@
 				4C781FAF2C29B5F90097D505 /* ContentViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4CA61D9E2C2EFCBA00F61813 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C01BEDE2C26B081006B431B /* MarsRoverPicsApp.swift */,
+				4C01BEE02C26B081006B431B /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +190,9 @@
 				4C01BEF52C26BDBA006B431B /* Photo.swift in Sources */,
 				4C01BEE12C26B081006B431B /* ContentView.swift in Sources */,
 				4C01BEDF2C26B081006B431B /* MarsRoverPicsApp.swift in Sources */,
+				4CA61DA22C2F01EC00F61813 /* Consts.swift in Sources */,
 				4C781FB02C29B5F90097D505 /* ContentViewModel.swift in Sources */,
+				4CA61DA02C2EFCDA00F61813 /* Cam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

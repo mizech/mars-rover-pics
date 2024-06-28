@@ -1,8 +1,5 @@
-//
-//  Consts.swift
-//  MarsRoverPics
-//
-//  Created by Michael on 28.06.24.
-//
-
 import Foundation
+
+struct Consts {
+    static let baseURL = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos"
+}
