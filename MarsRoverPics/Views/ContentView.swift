@@ -6,11 +6,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 25) {
-            Button("Load Pictures") {
-                Task {
-                    await contentVM.loadPhotos(selectedCam: selectedCam)
-                }
-            }
             Picker("Camera", selection: $selectedCam) {
                 ForEach(Cam.allCases, id: \.self) { cam in
                     Text(cam.rawValue)
@@ -28,6 +23,14 @@ struct ContentView: View {
             }.listStyle(.plain)
         }
         .padding()
+        .task {
+            await contentVM.loadPhotos(selectedCam: selectedCam)
+        }
+        .onChange(of: selectedCam) { oldValue, newValue in
+            Task {
+                await contentVM.loadPhotos(selectedCam: selectedCam)
+            }
+        }
     }
 }
 
