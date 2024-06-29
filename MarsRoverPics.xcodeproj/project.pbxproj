@@ -18,6 +18,8 @@
 		4C781FB02C29B5F90097D505 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C781FAF2C29B5F90097D505 /* ContentViewModel.swift */; };
 		4CA61DA02C2EFCDA00F61813 /* Cam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA61D9F2C2EFCDA00F61813 /* Cam.swift */; };
 		4CA61DA22C2F01EC00F61813 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA61DA12C2F01EC00F61813 /* Consts.swift */; };
+		4CB235712C3006470035C169 /* PicDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB235702C3006470035C169 /* PicDetails.swift */; };
+		4CB235732C3009AB0035C169 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB235722C3009AB0035C169 /* Rover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4C781FAF2C29B5F90097D505 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		4CA61D9F2C2EFCDA00F61813 /* Cam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cam.swift; sourceTree = "<group>"; };
 		4CA61DA12C2F01EC00F61813 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		4CB235702C3006470035C169 /* PicDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicDetails.swift; sourceTree = "<group>"; };
+		4CB235722C3009AB0035C169 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				4C01BEF62C26BE02006B431B /* Photos.swift */,
 				4CA61D9F2C2EFCDA00F61813 /* Cam.swift */,
 				4CA61DA12C2F01EC00F61813 /* Consts.swift */,
+				4CB235722C3009AB0035C169 /* Rover.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 			children = (
 				4C01BEDE2C26B081006B431B /* MarsRoverPicsApp.swift */,
 				4C01BEE02C26B081006B431B /* ContentView.swift */,
+				4CB235702C3006470035C169 /* PicDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 				4C01BEE12C26B081006B431B /* ContentView.swift in Sources */,
 				4C01BEDF2C26B081006B431B /* MarsRoverPicsApp.swift in Sources */,
 				4CA61DA22C2F01EC00F61813 /* Consts.swift in Sources */,
+				4CB235732C3009AB0035C169 /* Rover.swift in Sources */,
+				4CB235712C3006470035C169 /* PicDetails.swift in Sources */,
 				4C781FB02C29B5F90097D505 /* ContentViewModel.swift in Sources */,
 				4CA61DA02C2EFCDA00F61813 /* Cam.swift in Sources */,
 			);
