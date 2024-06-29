@@ -6,22 +6,22 @@ class ContentViewModel {
     
     func loadPhotos(selectedCam: Cam) async {
         if let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String {
-            var cam = ""
+            var abbr = ""
             
             switch selectedCam {
             case .front:
-                cam = "fhaz"
+                abbr = "fhaz"
             case .rear:
-                cam = "rhaz"
+                abbr = "rhaz"
             case .mast:
-                cam = "mast"
+                abbr = "mast"
             case .nav:
-                cam = "navcam"
+                abbr = "navcam"
             }
             
-            let oURL = URL(string: "\(Consts.baseURL)?sol=1000&camera=\(cam)&api_key=\(apiKey)")
+            let url = URL(string: "\(Consts.baseURL)?sol=1000&camera=\(abbr)&api_key=\(apiKey)")
             
-            if let url = oURL {
+            if let url = url {
                 do {
                     let (data, _) = try await URLSession.shared.data(from: url)
                     photos = try JSONDecoder().decode(Photos.self, from: data).photos
