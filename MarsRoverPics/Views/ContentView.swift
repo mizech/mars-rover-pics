@@ -16,9 +16,7 @@ struct ContentView: View {
                     Text(cam.rawValue)
                         .tag(cam)
                 }
-            }.pickerStyle(.wheel)
-                .clipped()
-            Spacer()
+            }
             List {
                 ForEach(contentVM.photos) { photo in
                     Section {
