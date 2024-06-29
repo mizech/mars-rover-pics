@@ -15,8 +15,13 @@ struct ContentView: View {
             List {
                 ForEach(contentVM.photos) { photo in
                     Section {
-                        AsyncImage(url: URL(string: photo.img_src))
-                            .frame(width: 200)
+                        AsyncImage(url: URL(string: photo.img_src)) { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(6)
+                        } placeholder: {
+                            ProgressView()
+                        }
                         Text("Taken on: \(photo.earth_date)")
                     }
                 }
